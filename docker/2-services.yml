@@ -7,7 +7,7 @@ networks:
 services:
   app-invoice:
     build: ../app-invoice
-    image: icesiops/appinvoice:0.1.0
+    image: ben331/appinvoice:0.1.0
     container_name: app-invoice
     ports:
       - "8006:8006"
@@ -16,7 +16,7 @@ services:
     restart: always
   app-pay:
     build: ../app-pay
-    image: icesiops/apppay:0.1.0
+    image: ben331/apppay:0.1.0
     container_name: app-pay
     ports:
       - "8010:8010"
@@ -25,7 +25,7 @@ services:
     restart: always
   app-transaction:
     build: ../app-transaction
-    image: icesiops/apptransaction:0.1.0
+    image: ben331/apptransaction:0.1.0
     container_name: app-transaction
     ports:
       - "8082:8082"

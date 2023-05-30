@@ -7,7 +7,7 @@ networks:
 services:
   loadbalancer:
     build: ../haproxy
-    image: icesiops/loadbalancer:0.1.0
+    image: ben331/loadbalancer:0.1.0
     container_name: loadbalancer
     ports:
       - "9000:80"

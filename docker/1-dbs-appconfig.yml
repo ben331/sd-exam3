@@ -7,7 +7,7 @@ networks:
 services:
   postgres:
     build: ../resources/postgres
-    image: icesiops/postgres:0.1.0
+    image: ben331/postgres:0.1.0
     container_name: postgres
     ports:
       - "5432:5432"
@@ -18,7 +18,7 @@ services:
       - distribuidos
   mysql:
     build: ../resources/mysql
-    image: icesiops/mysql:0.1.0
+    image: ben331/mysql:0.1.0
     container_name: mysql
     ports:
       - "3306:3306"
@@ -47,7 +47,7 @@ services:
       - distribuidos
   app-config:
     build: ../app-config
-    image: icesiops/appconfig:0.1.0
+    image: ben331/appconfig:0.1.0
     container_name: app-config
     ports:
       - "8888:8888"
